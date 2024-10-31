@@ -29,7 +29,14 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
+        {/* Handles tabbed screens */}
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+
+        {/* AR and Game screens need to be added here */}
+        <Stack.Screen name="ar"   options={{ title: 'AR Experience' }} />
+        <Stack.Screen name="game" options={{ title: 'Play Game' }} />
+
+        {/* Not found screen */}
         <Stack.Screen name="+not-found" />
       </Stack>
     </ThemeProvider>
