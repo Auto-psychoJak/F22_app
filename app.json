@@ -19,9 +19,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff",
-        "permissions": ["CAMERA"],
+        "permissions": [
+          "CAMERA"
+        ],
         "package": "com.yourcompany.f22arapp"
-      }
+      },
+      "package": "com.aMunoz10.F22ARApp"
     },
     "web": {
       "bundler": "metro",
